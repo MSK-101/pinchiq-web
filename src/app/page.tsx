@@ -11,7 +11,6 @@ export default function Home() {
       <MobileNavigation />
       <HeroSection />
       <HowWorksSection />
-      <hr className="md:mx-20" />
       <FooterSection />
     </>
   );

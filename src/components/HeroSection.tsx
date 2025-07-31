@@ -12,21 +12,20 @@ export default function HeroSection() {
         competitive bids—faster and easier than ever before.
       </p>
       <div className="flex justify-center mt-10 gap-4">
-        <Button className="bg-brand-50 text-brand-700 font-semibold rounded-full h-[48px] px-[20px] hover:bg-brand-50 hover:text-brand-700 cursor-pointer">
+        <Button className="bg-brand-50 text-brand-700 font-semibold rounded-full h-[48px] px-[20px] hover:bg-brand-50 hover:text-brand-700 cursor-pointer transition-all duration-300 ease-in-out hover:translate-y-[-3px] hover:shadow-xl">
           For Providers
         </Button>
-        <Button className="bg-brand-900 text-white font-semibold rounded-full h-[48px] px-[20px] hover:bg-brand-900 hover:text-white cursor-pointer">
+        <Button className="bg-brand-900 text-white font-semibold rounded-full h-[48px] px-[20px] hover:bg-brand-900 hover:text-white cursor-pointer transition-all duration-300 ease-in-out hover:translate-y-[-3px] hover:shadow-xl">
           For Agents
         </Button>
       </div>
 
-      <div className="flex justify-center mt-30">
+      <div className="flex justify-center mt-24">
         <Image
           src="/hero-image.png"
           alt="Hero Section Image"
-          width={1000}
-          height={1000}
-          className="mix-blend-lighten"
+          width={1500}
+          height={1500}
         />
       </div>
     </section>

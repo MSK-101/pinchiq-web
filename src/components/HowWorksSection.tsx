@@ -59,11 +59,11 @@ export default function HowWorksSection() {
   };
 
   return (
-    <section className="mt-40">
+    <section className="mt-24">
       <h1 className="text-center text-4xl font-semibold text-gray-900">
         How it works
       </h1>
-      <p className="text-center text-gray-600 px-4">
+      <p className="text-center text-gray-600 px-4 mt-2">
         We Match the Right Brokers to the Right Nursing Homes.
       </p>
 

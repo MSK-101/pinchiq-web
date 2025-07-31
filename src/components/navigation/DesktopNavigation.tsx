@@ -17,7 +17,7 @@ import { Button } from "../ui/button";
 
 export function MainNavigationMenu() {
   return (
-    <NavigationMenu viewport={false}>
+    <NavigationMenu viewport={false} className="text-gray-700">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>For Agents</NavigationMenuTrigger>
@@ -26,15 +26,9 @@ export function MainNavigationMenu() {
               <li>
                 <NavigationMenuLink asChild>
                   <Link href="#">
-                    <div className="font-medium">Components</div>
-                    <div className="text-muted-foreground">
-                      Browse all components in the library.
+                    <div className="font-medium text-gray-700">
+                      Documentation
                     </div>
-                  </Link>
-                </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#">
-                    <div className="font-medium">Documentation</div>
                     <div className="text-muted-foreground">
                       Learn how to use the library.
                     </div>
@@ -42,7 +36,7 @@ export function MainNavigationMenu() {
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
                   <Link href="#">
-                    <div className="font-medium">Blog</div>
+                    <div className="font-medium text-gray-700">Blog</div>
                     <div className="text-muted-foreground">
                       Read our latest blog posts.
                     </div>
@@ -58,13 +52,19 @@ export function MainNavigationMenu() {
             <ul className="grid w-[200px] gap-4">
               <li>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Components</Link>
+                  <Link href="#" className="text-gray-700">
+                    Components
+                  </Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Documentation</Link>
+                  <Link href="#" className="text-gray-700">
+                    Documentation
+                  </Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Blocks</Link>
+                  <Link href="#" className="text-gray-700">
+                    Blocks
+                  </Link>
                 </NavigationMenuLink>
               </li>
             </ul>
@@ -87,10 +87,10 @@ export default function DesktopNavigation() {
         <Image src="/logo-dark.png" alt="logo" width={100} height={100} />
         <MainNavigationMenu />
         <div>
-          <Button className="bg-transparent text-gray-600 font-semibold rounded-full h-[20px] px-[20px] hover:bg-transparent hover:text-gray-600 cursor-pointer shadow-none">
+          <Button className="bg-transparent text-gray-600 font-semibold rounded-full h-[40px] px-[12px] cursor-pointer shadow-none hover:text-gray-500 hover:bg-transparent">
             Login
           </Button>
-          <Button className="bg-brand-900 text-white font-semibold rounded-full h-[48px] px-[20px] hover:bg-brand-900 hover:text-white cursor-pointer">
+          <Button className="ml-2 bg-brand-900 text-white font-semibold rounded-full h-[48px] px-[20px] cursor-pointer hover:bg-brand-900 hover:opacity-90">
             Signup
           </Button>
         </div>
