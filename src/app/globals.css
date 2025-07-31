@@ -41,6 +41,10 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  --color-brand-900: var(--brand-color-900);
+  --color-brand-700: var(--brand-color-700);
+  --color-brand-50: var(--brand-color-50);
 }
 
 :root {
@@ -76,6 +80,10 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  --brand-color-900: oklch(0.3864 0.1097 267.27);
+  --brand-color-700: #3156C4;
+  --brand-color-50: #F1F6FD;
 }
 
 .dark {
@@ -110,6 +118,10 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+
+  --brand-color-900: oklch(0.3864 0.1097 267.27);
+  --brand-color-700: #3156C4;
+  --brand-color-50: #F1F6FD;
 }
 
 @layer base {
@@ -118,5 +130,52 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+.swiper{
+  padding-inline: 30px !important;
+}
+.swiper-wrapper{
+  align-items: center;
+}
+.swiper-slide-active {
+  background: linear-gradient(0deg, #C6DBF7 37.31%, #7DADEB 141.7%);
+  color: white;
+  animation: zoomIn 0.3s linear forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+#switch:checked ~ label .indicator {
+  animation: moveLeft 0.3s linear forwards;
+}
+
+#switch:not(:checked) ~ label .indicator {
+  animation: moveRight 0.3s linear forwards;
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(100%);
   }
 }
