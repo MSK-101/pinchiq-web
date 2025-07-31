@@ -179,3 +179,8 @@
     transform: translateX(100%);
   }
 }
+
+.navbar-shadow{
+  backdrop-filter: blur(7.5px);
+  box-shadow: 0.75px 3px 10.51px -2.25px #5252520F, 0.09px 0.36px 1.27px -1.13px #52525214;
+}

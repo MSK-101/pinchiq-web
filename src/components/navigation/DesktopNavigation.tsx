@@ -83,7 +83,7 @@ export function MainNavigationMenu() {
 export default function DesktopNavigation() {
   return (
     <div className="hidden md:block fixed top-0 left-0 right-0 z-50">
-      <div className="flex justify-between items-center mx-14 rounded-full backdrop-blur-[7.5px] bg-white/10 shadow-[0.75px_3px_10.51px_-2.25px_#5252520F] px-6 py-3 mt-3">
+      <div className="flex justify-between items-center mx-14 rounded-full bg-white/10 navbar-shadow px-6 py-3 mt-3">
         <Image src="/logo-dark.png" alt="logo" width={100} height={100} />
         <MainNavigationMenu />
         <div>
