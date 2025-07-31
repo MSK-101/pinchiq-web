@@ -1,7 +1,23 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
+
+@layer components {
+  .crystal-dropdown {
+    background: rgba(202, 170, 170, 0.06) !important;
+    border: 2px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+  }
+
+  .navigation-menu-item {
+    @apply block text-white hover:text-white/90 py-2 text-base font-medium;
+  }
+
+  .navigation-hamburger-line {
+    @apply block w-6 h-0.5 bg-gray-600 transition-all duration-300;
+  }
+}
 
 @theme inline {
   --color-background: var(--background);

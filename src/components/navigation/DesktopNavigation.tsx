@@ -21,7 +21,7 @@ export function MainNavigationMenu() {
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>For Agents</NavigationMenuTrigger>
-          <NavigationMenuContent>
+          <NavigationMenuContent className="crystal-dropdown">
             <ul className="grid w-[300px] gap-4">
               <li>
                 <NavigationMenuLink asChild>
@@ -54,7 +54,7 @@ export function MainNavigationMenu() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger>For Providers</NavigationMenuTrigger>
-          <NavigationMenuContent>
+          <NavigationMenuContent className="crystal-dropdown">
             <ul className="grid w-[200px] gap-4">
               <li>
                 <NavigationMenuLink asChild>
