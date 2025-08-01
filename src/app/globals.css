@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-
 @layer components {
   .crystal-dropdown {
     background: rgba(202, 170, 170, 0.06) !important;
@@ -11,7 +10,7 @@
   }
 
   .navigation-menu-item {
-    @apply block text-white hover:text-white/90 py-2 text-base font-medium;
+    @apply block text-gray-600 py-1 transition-colors hover:text-gray-900;
   }
 
   .navigation-hamburger-line {
@@ -98,8 +97,8 @@
   --sidebar-ring: oklch(0.708 0 0);
 
   --brand-color-900: oklch(0.3864 0.1097 267.27);
-  --brand-color-700: #3156C4;
-  --brand-color-50: #F1F6FD;
+  --brand-color-700: #3156c4;
+  --brand-color-50: #f1f6fd;
 }
 
 .dark {
@@ -136,8 +135,8 @@
   --sidebar-ring: oklch(0.556 0 0);
 
   --brand-color-900: oklch(0.3864 0.1097 267.27);
-  --brand-color-700: #3156C4;
-  --brand-color-50: #F1F6FD;
+  --brand-color-700: #3156c4;
+  --brand-color-50: #f1f6fd;
 }
 
 @layer base {
@@ -149,14 +148,14 @@
   }
 }
 
-.swiper{
+.swiper {
   padding-inline: 30px !important;
 }
-.swiper-wrapper{
+.swiper-wrapper {
   align-items: center;
 }
 .swiper-slide-active {
-  background: linear-gradient(0deg, #C6DBF7 37.31%, #7DADEB 141.7%);
+  background: linear-gradient(0deg, #c6dbf7 37.31%, #7dadeb 141.7%);
   color: white;
   animation: zoomIn 0.3s linear forwards;
 }
@@ -182,7 +181,7 @@
   from {
     transform: translateX(100%);
   }
-  to{
+  to {
     transform: translateX(0);
   }
 }
@@ -191,12 +190,27 @@
   from {
     transform: translateX(0);
   }
-  to{
+  to {
     transform: translateX(100%);
   }
 }
 
-.navbar-shadow{
+.navbar-shadow {
   backdrop-filter: blur(7.5px);
-  box-shadow: 0.75px 3px 10.51px -2.25px #5252520F, 0.09px 0.36px 1.27px -1.13px #52525214;
+  box-shadow: 0.75px 3px 10.51px -2.25px #5252520f,
+    0.09px 0.36px 1.27px -1.13px #52525214;
+}
+
+/* Custom Navigation Menu Styling */
+.navigation-menu-item {
+  @apply block text-gray-600 py-1 transition-colors hover:text-gray-900;
+}
+
+/* Mobile Navigation Styling */
+.mobile-nav-menu {
+  @apply backdrop-blur-md;
+}
+
+.mobile-nav-menu .mobile-nav-link {
+  @apply transition-all duration-200;
 }
